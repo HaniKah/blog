@@ -1,0 +1,207 @@
+:root{
+    --Green: #405621;
+    --l-Green: #a1a898;
+    --grey: #d9d5d2;
+    --beige: #d9cdc0;
+    --brown: #49362b;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width : 75%;
+    max-width: 900px;
+    background-color: var(--l-Green);
+    box-shadow: 50px 0px 20px rgb(63, 63, 63);
+
+}
+.wrapper{
+    box-shadow: 4px 4px 10px black;
+    width:100%;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1.5em;
+    background-color: white;
+
+}
+
+.Background-image{
+    background-image:url("https://www.rockrobinsid.com/images/blogs/blog-img-013.jpg");
+    background-size: cover;
+    height:400px;  
+}
+
+
+.latest_articles{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--grey);
+    padding: 3em;
+    align-items: center;
+    margin: 1em 0em;w
+}
+
+
+
+.container_for_flyers{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1em;
+}
+
+
+h3{
+    text-decoration: none;
+    font-family: 'Tilt Warp', cursive;
+}
+
+
+.container_for_flyers :hover{
+    opacity: 70%;
+}
+ 
+.flyers{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    height: 230px;
+    margin: 20px;
+    width: 150px;
+    box-shadow: 2px 4px 5px grey;
+    border: .6rem white solid;
+    flex-shrink:unset;
+}
+
+  
+#image_flyers{
+    width: 100%;
+    min-height: 75%;
+    
+}
+/* .image-plant{
+    width: 240px;
+    align-self: baseline;
+
+} */
+
+.about{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+.article_about{
+    padding: 50px;
+    text-align: center;
+
+}
+#image_about{
+    max-width: 50%;
+}
+h3{
+    font-family: 'Tilt Warp', cursive;
+    font-weight: 100;
+    color: rgb(0, 0, 0);
+    
+
+}
+h5{
+    font-family: 'Montserrat', sans-serif;
+}
+article p {
+    font-family: 'Montserrat', sans-serif;
+    font-size:small;
+    color: rgb(0, 0, 0);
+    text-align: justify;
+}
+nav{
+    min-width: fit-content;
+}
+
+
+
+ul{
+    display: flex;
+    justify-content: end;
+    margin: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+
+
+
+}
+
+ul a {
+    color: black;
+    padding: 0px 15px 0px 15px;
+    text-decoration: none;
+    font-family: 'Tilt Warp', cursive;
+}
+
+
+ul a:hover{
+
+    border-bottom: 3px black solid;
+    padding-bottom: 3px;
+
+    
+}
+footer{
+    
+    background-color:var(--grey) ;
+    width: 100%;
+    padding: 1.5em;
+    font-family: 'Tilt Warp', cursive;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+h2{
+    font-family: 'Tilt Warp', cursive;
+
+}
+footer p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: small;
+}
+footer input{
+    width: 35%;
+    color: #49362b;
+
+}
+button{
+    margin: 1em;
+    width: 75px;
+    height: 25px;
+}
+#subscribe{
+    font-weight: 200;
+    margin: 0;
+}
+
+@media screen and (max-width:800px){
+
+
+    .about{
+        flex-direction: column;
+    }
+    #image_about{
+        min-width:100%;
+    }
+    .flyers{
+
+        height: 125px;
+        width: 85px;
+    }
+
+ 
+}
+
