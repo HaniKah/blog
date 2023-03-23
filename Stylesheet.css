@@ -6,33 +6,35 @@
     --brown: #49362b;
 }
 body{
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    width : 75%;
-    max-width: 900px;
-    background-color: var(--l-Green);
-    box-shadow: 50px 0px 20px rgb(63, 63, 63);
-    font-family:'Tilt Warp', cursive;
-    
 
+    margin: 0 auto;
+    background-color: var(--l-Green);
+    font-family:'Tilt Warp', cursive;
 }
+
 .wrapper{
-    box-shadow: 4px 4px 10px black;
-    width:100%;
+    width: 75%;
+    max-width: 900px;
+    margin: 0 auto;
+
+
+
+ 
 }
+
 .container{
+    margin: 0;
     display: flex;
     flex-direction: column;
-    width: 100%;
     padding: 1.5em;
     background-color: white;
-
+    width: 100%;
 }
 
 /*===================
    welcoming page 
 ===================== */
+
 ul a {
     color: black;
     padding: 0px 15px 0px 15px;
@@ -117,9 +119,8 @@ h3{
 }
 
 
-.container_for_flyers :hover{
+.flyers:hover{
     opacity: 70%;
-    display: flex;
 }
  
 .flyers{
@@ -139,22 +140,24 @@ h3{
 #image_flyers{
     /* display: block; */
     width: 100%;
-    min-height: 65%;
+    height: 60%;
     /* padding-bottom: 35%; */
 
     
 }
 
-aside h5{
+h5{
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     text-align: center;
     font-size: 0.75em;
     padding: 0.5em;
     width: 100;
-    /* text-decoration: none;
-    font-style: normal;
-    color: black; */
+    color: rgb(0, 0, 0);
+}
+
+.latest_articles a {
+    text-decoration: none;
 }
 
 /*===================
@@ -167,6 +170,7 @@ aside h5{
     justify-content: space-around;
     align-items: center;
     flex-direction: row-reverse;
+    padding: 0;
 }
 .article_about{
     padding: 50px;
@@ -190,7 +194,9 @@ nav{
 }
 
 
-
+/*===================
+        footer
+===================== */
 
 
 
@@ -200,14 +206,13 @@ footer{
     width: 100%;
     padding: 1.5em;
     /* font-family: 'Tilt Warp', cursive; */
-}
-footer{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-
+    margin: 0 auto;
 }
+
 
 footer p {
     font-family: 'Montserrat', sans-serif;
@@ -230,21 +235,95 @@ button{
 /*===================
         Media Q - Tablet
 ===================== */
-@media screen and (max-width:800px){
+@media screen and (max-width:860px){
 
 
+    .flyers{
+    height: 190px;
+    }
     .about{
-        flex-direction: column;
+        display: block;
+        padding:0;
+        margin: 0;
     }
     #image_about{
-        min-width:100%;
+        max-width: 100%;
+        margin: 0;
+    }
+    .article_about{
+       padding: 1em;
+    }
+    
+    footer{
+        margin: 0;
+    }
+   
+}
+
+/*===================
+        Media Q - smart phone
+===================== */
+
+@media screen and (max-width:560px){
+    .wrapper{
+        width: 100%;
+    }
+    .container{
+        padding: 0;
+        margin: 0 auto;
+    }
+    h1{
+        width: 90%;
+        margin: 0 auto;
+    }
+       /*=================== latest articles */
+    .latest_articles{
+        margin:0;
+    }
+
+    .container_for_flyers{
+        display: block;
+        width: 100%;
+    }
+        
+    
+    #image_flyers{
+        display: none;
+
     }
     .flyers{
-
-        height: 125px;
-        width: 85px;
+        min-height: 50px;
+        max-height: 65px;
+        width: 90%;
+  
+        padding: 0;
+        margin: 1em auto;
+        background-color:none
+        ;
+        border: none;
     }
 
- 
+    .latest_articles h5 {
+        width: 90%;
+        margin: auto auto;
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+    }
+    .latest_articles h3 {
+        margin-bottom : 2em;
+    }
+    
+    /*=================== About */
+
+    .article_about p {
+        padding:1em;
+    }
+
+    .latest_articles a {
+        display: flex;
+        flex: auto;
+        justify-content: space-between;
+    }
+   
 }
 
