@@ -7,9 +7,10 @@
 }
 body{
 
-    margin: 0 auto;
     background-color: var(--l-Green);
     font-family:'Tilt Warp', cursive;
+    margin: 0;
+    padding: 0;
 }
 
 .wrapper{
@@ -17,15 +18,11 @@ body{
     max-width: 900px;
     margin: 0 auto;
 
-
-
- 
 }
 
 .container{
     margin: 0;
-    display: flex;
-    flex-direction: column;
+    display: inline-block;
     padding: 1.5em;
     background-color: white;
     width: 100%;
@@ -230,6 +227,7 @@ button{
 }
 #subscribe{
     margin: 0;
+    
 }
 
 /*===================
@@ -266,12 +264,12 @@ button{
 
 @media screen and (max-width:560px){
     .wrapper{
-        width: 100%;
+        min-width: 100%;
     }
     .container{
         padding: 0;
-        margin: 0 auto;
     }
+
     h1{
         width: 90%;
         margin: 0 auto;
@@ -324,6 +322,10 @@ button{
         flex: auto;
         justify-content: space-between;
     }
+    footer{
+        padding: 1.5em 0;
+    }
    
 }
 
+    /*=================== footer */
