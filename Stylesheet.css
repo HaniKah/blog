@@ -1,31 +1,29 @@
-:root{
-    --Green: #405621;
-    --l-Green: #a1a898;
-    --grey: #d9d5d2;
-    --beige: #d9cdc0;
-    --brown: #49362b;
+:root {
+  --Green: #405621;
+  --l-Green: #a1a898;
+  --grey: #d9d5d2;
+  --beige: #d9cdc0;
+  --brown: #49362b;
 }
-body{
-
-    background-color: var(--l-Green);
-    font-family:'Tilt Warp', cursive;
-    margin: 0;
-    padding: 0;
-}
-
-.wrapper{
-    width: 75%;
-    max-width: 900px;
-    margin: 0 auto;
-
+body {
+  background-color: var(--l-Green);
+  font-family: "Tilt Warp", cursive;
+  margin: 0;
+  padding: 0;
 }
 
-.container{
-    margin: 0;
-    display: inline-block;
-    padding: 1.5em;
-    background-color: white;
-    width: 100%;
+.wrapper {
+  width: 75%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.container {
+  margin: 0;
+  display: inline-block;
+  padding: 1.5em;
+  background-color: white;
+  width: 100%;
 }
 
 /*===================
@@ -33,299 +31,268 @@ body{
 ===================== */
 
 ul a {
-    color: black;
-    padding: 0px 15px 0px 15px;
-    text-decoration: none;
-    /* font-family: 'Montserrat', sans-serif; */
-    font-weight: 100;
+  color: black;
+  padding: 0px 15px 0px 15px;
+  text-decoration: none;
+  /* font-family: 'Montserrat', sans-serif; */
+  font-weight: 100;
 }
 
-
-ul a:hover{
-
-    border-bottom: 3px black solid;
-    padding-bottom: 3px;
-    /* font-weight: bold; */
-
-    
+ul a:hover {
+  border-bottom: 3px black solid;
+  padding-bottom: 3px;
+  /* font-weight: bold; */
 }
 
-ul{
-    display: flex;
-    justify-content: end;
-    margin: 5px;
-    padding: 10px;
-    box-sizing:border-box;
+ul {
+  display: flex;
+  justify-content: end;
+  margin: 5px;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
-.Background-image{
-    background-color:rgb(135, 135, 135);
-    background-image:url("https://www.rockrobinsid.com/images/blogs/blog-img-013.jpg");
-    padding-bottom: 15em;
-    background-blend-mode: overlay;
-    background-repeat: no-repeat;
-    /* background-size: cover; */
-    background-position: right center;
+.Background-image {
+  background-color: rgb(135, 135, 135);
+  background-image: url("./Background\ Image.jpg");
+  padding-bottom: 15em;
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+  background-position: right center;
 }
-h1{ 
-    /* font-family: 'Tilt Warp', cursive; */
+h1 {
+  /* font-family: 'Tilt Warp', cursive; */
 
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2rem;
-    padding-top: 3em;
-    text-align: center;
-    letter-spacing: .3em;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  padding-top: 3em;
+  text-align: center;
+  letter-spacing: 0.3em;
 }
 h1 p {
-    font-size: 1rem;
-    font-weight: 400;
-    color: rgb(0, 0, 0);
-    letter-spacing: normal;
-    font-family: 'Montserrat', sans-serif;
-
-
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgb(0, 0, 0);
+  letter-spacing: normal;
+  font-family: "Montserrat", sans-serif;
 }
 
 /*===================
    Latest Articles 
 ===================== */
 
-.latest_articles{
-    /* display: flex;
+.latest_articles {
+  /* display: flex;
     flex-direction: column; */
-    background-color: var(--grey);
-    padding: 3em;
-    /* align-items: center; */
-    margin: 1em 0em;
+  background-color: var(--grey);
+  padding: 3em;
+  /* align-items: center; */
+  margin: 1em 0em;
 }
 
-
-
-h3{
-    text-decoration: none;
-    /* font-family: 'Tilt Warp', cursive; */
-    font-weight:1500;
-    color: rgb(0, 0, 0);
-    text-align: center;
-    letter-spacing:.1em;
+h3 {
+  text-decoration: none;
+  /* font-family: 'Tilt Warp', cursive; */
+  font-weight: 1500;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  letter-spacing: 0.1em;
 }
 
-.container_for_flyers{
-    display: flex;
-    justify-content: space-evenly;
+.container_for_flyers {
+  display: flex;
+  justify-content: space-evenly;
 }
 
-
-.flyers:hover{
-    opacity: 70%;
-}
- 
-.flyers{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: white;
-    height: 270px;
-    margin: 20px;
-    width: 180px;
-    box-shadow: 2px 4px 5px grey;
-    border: .6rem white solid;
-
+.flyers:hover {
+  opacity: 70%;
 }
 
-  
-#image_flyers{
-    /* display: block; */
-    width: 100%;
-    height: 60%;
-    /* padding-bottom: 35%; */
-
-    
+.flyers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  height: 270px;
+  margin: 20px;
+  width: 180px;
+  box-shadow: 2px 4px 5px grey;
+  border: 0.6rem white solid;
 }
 
-h5{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    text-align: center;
-    font-size: 0.75em;
-    padding: 0.5em;
-    width: 100;
-    color: rgb(0, 0, 0);
+#image_flyers {
+  /* display: block; */
+  width: 100%;
+  height: 60%;
+  /* padding-bottom: 35%; */
+}
+
+h5 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  font-size: 0.75em;
+  padding: 0.5em;
+  width: 100;
+  color: rgb(0, 0, 0);
 }
 
 .latest_articles a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 /*===================
         About
 ===================== */
 
-
-.about{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row-reverse;
-    padding: 0;
+.about {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row-reverse;
+  padding: 0;
 }
-.article_about{
-    padding: 50px;
-    text-align: center;
-
+.article_about {
+  padding: 50px;
+  text-align: center;
 }
-#image_about{
-    max-width: 50%;
+#image_about {
+  max-width: 50%;
 }
-
 
 article p {
-    font-family: 'Montserrat', sans-serif;
-    font-size:small;
-    color: rgb(0, 0, 0);
-    text-align: justify;
-
+  font-family: "Montserrat", sans-serif;
+  font-size: small;
+  color: rgb(0, 0, 0);
+  text-align: justify;
 }
-nav{
-    min-width: fit-content;
+nav {
+  min-width: fit-content;
 }
-
 
 /*===================
         footer
 ===================== */
 
-
-
-footer{
-    
-    background-color:var(--grey) ;
-    width: 100%;
-    padding: 1.5em;
-    /* font-family: 'Tilt Warp', cursive; */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    margin: 0 auto;
+footer {
+  background-color: var(--grey);
+  width: 100%;
+  padding: 1.5em;
+  /* font-family: 'Tilt Warp', cursive; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
 }
-
 
 footer p {
-    font-family: 'Montserrat', sans-serif;
-    font-size: small;
+  font-family: "Montserrat", sans-serif;
+  font-size: small;
 }
-footer input{
-    width: 35%;
-    color: #49362b;
-
+footer input {
+  width: 35%;
+  color: #49362b;
 }
-button{
-    margin: 1em;
-    width: 75px;
-    height: 25px;
+button {
+  margin: 1em;
+  width: 75px;
+  height: 25px;
 }
-#subscribe{
-    margin: 0;
-    
+#subscribe {
+  margin: 0;
 }
 
 /*===================
         Media Q - Tablet
 ===================== */
-@media screen and (max-width:860px){
-
-
-    .flyers{
+@media screen and (max-width: 860px) {
+  .flyers {
     height: 190px;
-    }
-    .about{
-        display: block;
-        padding:0;
-        margin: 0;
-    }
-    #image_about{
-        max-width: 100%;
-        margin: 0;
-    }
-    .article_about{
-       padding: 1em;
-    }
-    
-    footer{
-        margin: 0;
-    }
-   
+  }
+  .about {
+    display: block;
+    padding: 0;
+    margin: 0;
+  }
+  #image_about {
+    max-width: 100%;
+    margin: 0;
+  }
+  .article_about {
+    padding: 1em;
+  }
+
+  footer {
+    margin: 0;
+  }
 }
 
 /*===================
         Media Q - smart phone
 ===================== */
 
-@media screen and (max-width:560px){
-    .wrapper{
-        min-width: 100%;
-    }
-    .container{
-        padding: 0;
-    }
+@media screen and (max-width: 560px) {
+  .wrapper {
+    min-width: 100%;
+  }
+  .container {
+    padding: 0;
+  }
 
-    h1{
-        width: 90%;
-        margin: 0 auto;
-    }
-       /*=================== latest articles */
-    .latest_articles{
-        margin:0;
-    }
+  h1 {
+    width: 90%;
+    margin: 0 auto;
+  }
+  /*=================== latest articles */
+  .latest_articles {
+    margin: 0;
+  }
 
-    .container_for_flyers{
-        display: block;
-        width: 100%;
-    }
-        
-    
-    #image_flyers{
-        display: none;
+  .container_for_flyers {
+    display: block;
+    width: 100%;
+  }
 
-    }
-    .flyers{
-        min-height: 50px;
-        max-height: 65px;
-        width: 90%;
-  
-        padding: 0;
-        margin: 1em auto;
-        background-color:none
-        ;
-        border: none;
-    }
+  #image_flyers {
+    display: none;
+  }
+  .flyers {
+    min-height: 50px;
+    max-height: 65px;
+    width: 90%;
 
-    .latest_articles h5 {
-        width: 90%;
-        margin: auto auto;
-        color: rgb(0, 0, 0);
-        text-decoration: none;
-    }
-    .latest_articles h3 {
-        margin-bottom : 2em;
-    }
-    
-    /*=================== About */
+    padding: 0;
+    margin: 1em auto;
+    background-color: none;
+    border: none;
+  }
 
-    .article_about p {
-        padding:1em;
-    }
+  .latest_articles h5 {
+    width: 90%;
+    margin: auto auto;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+  }
+  .latest_articles h3 {
+    margin-bottom: 2em;
+  }
 
-    .latest_articles a {
-        display: flex;
-        flex: auto;
-        justify-content: space-between;
-    }
-    footer{
-        padding: 1.5em 0;
-    }
-   
+  /*=================== About */
+
+  .article_about p {
+    padding: 1em;
+  }
+
+  .latest_articles a {
+    display: flex;
+    flex: auto;
+    justify-content: space-between;
+  }
+  footer {
+    padding: 1.5em 0;
+  }
 }
 
-    /*=================== footer */
+/*=================== footer */
